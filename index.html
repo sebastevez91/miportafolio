@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./img/icono-de-cv.png">
+    <title>Mi portafolio</title>
+</head>
+<body>
+    <!--Navegador-->
+    <div class="caja-header">
+        <header>
+            <div class="logo">
+                <h1>Mi Portafolio</h1>
+            </div>
+                    <nav id="nav" class="nav">
+                        <ul>
+                            <li><a href="#inicio" onclick="seleccion()">Inicio</a></li>
+                            <li><a href="#info-personal" onclick="seleccion()">Acerca de mi</a></li>
+                            <li><a href="#skill" onclick="seleccion()">Skill</a></li>
+                            <li><a href="#cv" onclick="seleccion()">Educación</a></li>
+                            <li><a href="#habilidades" onclick="seleccion()">Habilidades</a></li>
+                            <li><a href="#contacto" onclick="seleccion()">Contactos</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-responsive" onclick="mostrarMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+        </header>
+    </div>
+    <!----Inicio---->
+    <section id="inicio" class="inicio">
+        <div class="caja-inicio">
+            <div class="caja-img">
+                <img src="img/perfil-cv.jpg" alt="Sebastian Tevez" >
+            </div>
+        <h2>Soy Sebastian Alejandro Tevez</h2>
+        <h3>Programador junior</h3>
+        <h3>Desarrollador de Web</h3>
+        </div>
+    </section>   
+    <!----Acerca de mi y datos pesonales---->
+    <section id="info-personal" class="info-personal">
+        <div class="caja-personal">
+            <h2>Acerca de mi</h2>
+            <p> Soy un programador junior con una base sólida en desarrollo de software, especializado en lenguajes como Python y Java. 
+                Mi enfoque se centra en el desarrollo front-end, utilizando tecnologías como HTML, CSS y JavaScript, complementado con conocimientos en PHP para el desarrollo back-end.</p>
+            <p> Me apasiona la creación de soluciones tecnológicas innovadoras, un interés que he cultivado a través de proyectos académicos relevantes y la participación en iniciativas de programación colaborativa.</p>
+            <p> Destaco en el uso eficiente de herramientas como GitHub para la colaboración y el control de versiones, una habilidad esencial para el trabajo en equipo en entornos de desarrollo modernos. 
+                Busco una oportunidad donde pueda aplicar y ampliar mis habilidades técnicas, contribuyendo al crecimiento y éxito de proyectos desafiantes.</p>
+        </div>
+        <div class="fila">
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Fecha de Nacimiento</strong>
+                        10/11/1992
+                    </li>
+                    <li>
+                        <strong>Telefono</strong>
+                        (11)23868868
+                    </li>
+                    <li>
+                        <strong>Dirección</strong>
+                        Grl Manuel N.Savio 215, Argentina
+                    </li>
+                    <li>
+                        <strong>E-mail</strong>
+                        sebastevez91@gmail.com
+                    </li>
+                    <li>
+                        <strong>Cargo</strong>
+                        Desarrollador
+                        Programador
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="caja-interes">
+                    <div class="interes">
+                        <i class="fa-brands fa-avianex"></i>
+                        <span>Viajes</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-person-running"></i>
+                        <span>Running</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-book"></i>
+                        <span>Lectura</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-car"></i>
+                        <span>Autos</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Computación</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-----Skills-----> 
+    <section class="skill" id="skill">
+        <div class="caja-skill">   
+                <h2>Software</h2>
+                <button type="button"onclick="mostrarCerrar(true,'lenguaje')">Mostrar información
+                <span class="overlay"></span></button>
+                <button type="button" onclick="mostrarCerrar(false,'lenguaje')">Cerrar información
+                <span class="overlay"></span></button>
+                <div class="fila" id="lenguaje" >
+                  <div class="col">
+                        <h3>Technical Skill</h3>
+                        <div class="skill-dt">
+                            <span>HTML</span> <div class="barra-skill">
+                                <div class="progress">
+                                    <span>85%</span>
+                                </div>
+                                </div> 
+                                <span>CSS</span> <div class="barra-skill">
+                                    <div class="progress">
+                                        <span>75%</span>
+                                    </div>
+                                    </div>   
+                                 <span>PHP</span> <div class="barra-skill">
+                                    <div class="progress">
+                                        <span>50%</span>
+                                    </div>
+                                    </div>  
+                                <span>JAVASCRIPT</span> <div class="barra-skill">
+                                    <div class="progress">
+                                        <span>90%</span>
+                                    </div>
+                                    </div> 
+                                <span>PYTHON</span> <div class="barra-skill">
+                                    <div class="progress">
+                                        <span>75%</span>
+                                    </div>
+                                    </div> 
+                        </div>
+                  </div>
+                  <div class="col">
+                    <h3>Professional Skill</h3>
+                    <div class="skill-dt" id="skill">
+                        <span>TRABAJO EN EQUIPO</span> <div class="barra-skill">
+                            <div class="progress">
+                                <span>75%</span>
+                            </div>
+                            </div> 
+                            <span>COMUNICACIÖN</span> <div class="barra-skill">
+                                <div class="progress">
+                                    <span>55%</span>
+                                </div>
+                                </div>   
+                             <span>DEDICACIÖN</span> <div class="barra-skill">
+                                <div class="progress">
+                                    <span>90%</span>
+                                </div>
+                                </div>  
+                            <span>CREATIVIDAD</span> <div class="barra-skill">
+                                <div class="progress">
+                                    <span>81%</span>
+                                </div>
+                                </div> 
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!---Educación-->
+    <section id="cv" class="cv">
+        <div class="caja-cv">
+            <h2>Educación</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Educación Académica</h3>
+                    <div class="item der">
+                        <h4>Ticmas</h4>
+                        <span class="curso">15/05/2023 Curso primeros pasos de front-end</span>
+                        <p class="contenido">Conocimientos en Html, CSS, JavaScript</p>
+                        <p>Modalidad online</p>
+                        <span class="curso">13/10/2023 - Curso Fundamentos de Programación</span>
+                        <p class="contenido">Conocimientos en Python, Ruby, JavaScript</p>
+                        <p>Modalidad online</p>
+                    </div>
+                    <div class="item der">
+                        <h4>Instituto inmaculada concepcion (ISTIC)</h4>
+                        <span class="cargo">Técnicatura en Analisis de Sistemas </span>
+                        <span class="fecha">Actualmente cursando</span>
+                        <p>Modalidad Presencial</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+           
+    <!-----Habilidades------>            
+    <section class="habilidades" id="habilidades">           
+        <div class="caja-habilidades">
+            <h2>Habilidades</h2>
+                
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Aptitudes</h3>
+                        <button type="button" onclick="mostrarCerrar(true,'aptitudes')">Mostrar información
+                            <span class="overlay"></span></button>
+                        <button type="button" onclick="mostrarCerrar(false,'aptitudes')">Cerrar información
+                            <span class="overlay"></span></button>
+                        <ul id="aptitudes">
+                            <li>Recopilación y análisis de datos</li>
+                            <li>Análisis técnico</li>
+                            <li>Habilidades de diagnóstico de problemas</li>
+                            <li>Generación de informes</li>
+                            <li>Gestión de la implementación</li>
+                            <li>Herramientas de automatización</li>
+                        </ul>
+                    </div>
+                    <div class="col derecha">
+                            <h3>Idiomas</h3>
+                            <button type="button" onclick="mostrarCerrar(true,'idioma')">Mostrar información
+                                <span class="overlay"></span></button>
+                            <button type="button" onclick="mostrarCerrar(false,'idioma')">Cerrar información
+                                <span class="overlay"></span></button>
+                            <ul id="idioma">
+                                <li>Español: nivel nativo</li>
+                                <li>Inglés: nivel intermedio (B2)</li>
+                                <li>Italiano: nivel basico (A1)</li>
+                            </ul>
+                    </div>
+                </div>
+        </div>  
+    </section>     
+    <!------Contacto------>
+    <section id="contacto" class="contacto">
+        <div class="caja-contacto">
+            <h2>Contactos</h2>
+                <div class="fila">
+                    <div class="col">
+                        <form action="" method="post">
+                            <label>Nombre </label>
+                            <input type="text" name="nombre" placeholder="Ingrese su Nombre" required><br>
+                            <label>Apellido </label>
+                            <input type="text" name="apellido" placeholder="Ingrese su Apellido" required><br>
+                            <label>E-mail </label>
+                            <input type="email" name="Email" placeholder="Ingrese su E-mail"><br>
+                            <label>Comentario </label>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deje su mensaje" ></textarea><br>
+                            <button>Enviar<i class="fa-solid fa-file-import"></i>
+                            <span class="overlay"></span></button>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <div class="info">
+                            <ul>
+                                <li><i class="fa-solid fa-envelope"></i>
+                                    sebastevez91@gmail.com </li>
+                                <li><i class="fa-solid fa-phone"></i>
+                                    (11) 23868868 </li>
+                                <li><i class="fa-solid fa-location-dot"></i>
+                                    Grl Manuel N.Savio, 215 p.4 dep.14</li>
+                             </ul>
+                             <div class="container">
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="#"><img src="PNG/facebook2.png" alt="facebook"></a></li>
+                                        <li><a href="#"><img src="PNG/twitter.png" alt="twitter"></a></li>
+                                        <li><a href="#"><img src="PNG/instagram.png" alt="instagram"></a></li>
+                                        <li><a href="#"><img src="PNG/linkedin.png" alt="linkedin"></a></li>
+                                    </ul>   
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+             </div>
+        </div>
+    </section>     
+    <script src="js/main.js"></script>
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-arrow-up"></i></a>
+        <h4>Volver a inicio</h4>    
+    </footer>
+</body>
+</html>
