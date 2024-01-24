@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css\styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./img/icono-de-cv.png">
     <title>Portafolio</title>
@@ -25,7 +25,6 @@
                             <li><a href="#info-personal" onclick="seleccion()">Acerca de mi</a></li>
                             <li><a href="#skill" onclick="seleccion()">Skill</a></li>
                             <li><a href="#cv" onclick="seleccion()">Educación</a></li>
-                            <li><a href="#habilidades" onclick="seleccion()">Habilidades</a></li>
                             <li><a href="#contacto" onclick="seleccion()">Contactos</a></li>
                         </ul>
                     </nav>
@@ -106,12 +105,8 @@
     <!-----Skills-----> 
     <section class="skill" id="skill">
         <div class="caja-skill">   
-                <h2>Software</h2>
-                <button type="button"onclick="mostrarCerrar(false,'lenguaje')">Mostrar información
-                <span class="overlay"></span></button>
-                <button type="button" onclick="mostrarCerrar(true,'lenguaje')">Cerrar información
-                <span class="overlay"></span></button>
-                <div class="fila" id="lenguaje" >
+                <h2>Skill</h2>
+                <div class="fila" >
                   <div class="col">
                         <h3>Technical Skill</h3>
                         <div class="skill-dt">
@@ -170,7 +165,7 @@
         </div>
     </section>
     <!---Educación-->
-    <section id="cv" class="cv">
+    <section id="cv" class="cv"> 
         <div class="caja-cv">
             <h2>Educación</h2>
             <div class="fila">
@@ -194,55 +189,25 @@
                         <span class="contenido">Actualmente cursando</span>
                         <p>Modalidad Presencial</p>
                     </div>
-
+                    <div class="item der">
+                        <h4>Idiomas</h4>
+                        <ul id="idioma">
+                            <li>Español: nivel nativo</li>
+                            <li>Inglés: nivel intermedio (B2)</li>
+                            <li>Italiano: nivel basico (A1)</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-           
-    <!-----Habilidades------>            
-    <section class="habilidades" id="habilidades">           
-        <div class="caja-habilidades">
-            <h2>Habilidades</h2>
-                
-                <div class="fila">
-                    <div class="col izquierda">
-                        <h3>Aptitudes</h3>
-                        <button type="button" onclick="mostrarCerrar(true,'aptitudes')">Mostrar información
-                            <span class="overlay"></span></button>
-                        <button type="button" onclick="mostrarCerrar(false,'aptitudes')">Cerrar información
-                            <span class="overlay"></span></button>
-                        <ul id="aptitudes">
-                            <li>Recopilación y análisis de datos</li>
-                            <li>Análisis técnico</li>
-                            <li>Habilidades de diagnóstico de problemas</li>
-                            <li>Generación de informes</li>
-                            <li>Gestión de la implementación</li>
-                            <li>Herramientas de automatización</li>
-                        </ul>
-                    </div>
-                    <div class="col derecha">
-                            <h3>Idiomas</h3>
-                            <button type="button" onclick="mostrarCerrar(true,'idioma')">Mostrar información
-                                <span class="overlay"></span></button>
-                            <button type="button" onclick="mostrarCerrar(false,'idioma')">Cerrar información
-                                <span class="overlay"></span></button>
-                            <ul id="idioma">
-                                <li>Español: nivel nativo</li>
-                                <li>Inglés: nivel intermedio (B2)</li>
-                                <li>Italiano: nivel basico (A1)</li>
-                            </ul>
-                    </div>
-                </div>
-        </div>  
-    </section>     
     <!------Contacto------>
     <section id="contacto" class="contacto">
         <div class="caja-contacto">
             <h2>Contactos</h2>
                 <div class="fila">
                     <div class="col">
-                        <form action="" method="post">
+                        <form action="https://formsubmit.co/sebastevez91@email.com" method="POST">
                             <label>Nombre </label>
                             <input type="text" name="nombre" placeholder="Ingrese su Nombre" required><br>
                             <label>Apellido </label>
@@ -253,6 +218,8 @@
                             <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deje su mensaje" ></textarea><br>
                             <button>Enviar<i class="fa-solid fa-file-import"></i>
                             <span class="overlay"></span></button>
+                            <input type="hidden" name="_next" value="#inicio" />
+                            <input type="hidden" name="_captcha" value="false" />
                         </form>
                     </div>
                     <div class="col">
@@ -268,10 +235,10 @@
                              <div class="container">
                                 <div class="social">
                                     <ul>
-                                        <li><a href="#"><img src="PNG/facebook2.png" alt="facebook"></a></li>
-                                        <li><a href="#"><img src="PNG/twitter.png" alt="twitter"></a></li>
-                                        <li><a href="#"><img src="PNG/instagram.png" alt="instagram"></a></li>
-                                        <li><a href="#"><img src="PNG/linkedin.png" alt="linkedin"></a></li>
+                                        <li><a href="#"><img src="PNG/facebook2.png" alt="Facebook"></a></li>
+                                        <li><a href="#"><img src="PNG/instagram.png" alt="Instagram"></a></li>
+                                        <li><a href="#"><img src="PNG/linkedin.png" alt="Linkedin"></a></li>
+                                        <li><a href="#"><img src="PNG/github.png" alt="GitHub"></a></li>
                                     </ul>   
                                 </div>
                             </div>
