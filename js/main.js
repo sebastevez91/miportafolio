@@ -38,14 +38,3 @@ function animacionSkill(){
 window.onscroll = function(){
     animacionSkill();
 }
-
-//----Botones Mostrar y ocultar imformacion-----//
-
-function mostrarCerrar (selec, identidad){
-    div=document.getElementById(identidad);
-    if (selec==true){
-        div.style.display='';
-    }else{
-        div.style.display='none'
-    }
-}     
