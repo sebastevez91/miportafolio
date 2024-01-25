@@ -749,6 +749,56 @@ footer .arriba{
         display: block;
     }
 
+@media (max-width:300px) {
+    .info-personal .fila{
+        display: block;
+    }
+
+    .info-personal .fila .col{
+        width:fit-content;
+    }
+
+    .skill .fila{
+        display: block;
+    }
+
+    .skill .fila .col{
+        width: 100%;
+    }
+
+    .skill .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .cv .fila{
+        display: block;
+    }
+
+    .cv .fila .col{
+        width: 90%;
+    }
+
+    .cv .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .habilidades .fila{
+        display: block;
+    }
+
+    .habilidades .fila .col{
+        width: 100%;
+    }
+
+    .contacto .fila{
+        display: block;
+    }
+
+    .contacto .fila .col{
+        width: 100%;
+    } 
+    
+}
     .contacto .fila .col{
         width: 100%;
     } 
